@@ -4,6 +4,7 @@ body {
 
 .head {
   text-align: center;
+  color: rgb(215, 240, 250);
   font-size: 50px;
   font-weight: bold;
   padding: 20px;
@@ -11,7 +12,10 @@ body {
   max-width: 350px;
   width: 300px;
   gap: 10px;
-  height: 250px;
-  max-height: 250px;
+  height: 300px;
+  max-height: 300px;
   margin: 15rem auto;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: turquoise !important;
+  opacity: 0.8;
 }
