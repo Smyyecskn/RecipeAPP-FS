@@ -1,10 +1,13 @@
+import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./router/AppRouter";
 
 function App() {
   return (
     <div>
       <h1 className="text-center mt-3">
-        <AppRouter />
+        <BrowserRouter>
+          <AppRouter />
+        </BrowserRouter>
       </h1>
     </div>
   );
