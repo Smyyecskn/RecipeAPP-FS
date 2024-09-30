@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="mx-auto head  border border-dark">
       <img width="50px" src={meal2} alt="meal" />
-      <h2>🍽️SMYYE RECIPE APP </h2>
+      <h2>🍽️SMYYE FOOD APP </h2>
     </div>
   );
 };

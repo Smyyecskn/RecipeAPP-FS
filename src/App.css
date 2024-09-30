@@ -14,8 +14,15 @@ body {
   gap: 10px;
   height: 300px;
   max-height: 300px;
-  margin: 15rem auto;
+  margin: 10rem auto;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   background-color: turquoise !important;
   opacity: 0.8;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-style: italic;
+  font-weight: bolder;
 }
