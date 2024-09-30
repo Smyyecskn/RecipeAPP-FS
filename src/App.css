@@ -1,0 +1,17 @@
+body {
+  background-image: url("https://picsum.photos/1600/900");
+}
+
+.head {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 50%;
+  max-width: 350px;
+  width: 300px;
+  gap: 10px;
+  height: 250px;
+  max-height: 250px;
+  margin: 15rem auto;
+}
