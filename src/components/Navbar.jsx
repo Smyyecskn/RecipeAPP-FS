@@ -1,15 +1,37 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useLoginContext } from "../context/LoginProvider";
 
 const Navbar = () => {
+  const { user, setUser } = useLoginContext();
   return (
-    <div className="nav m-5">
-      <NavLink to="/">HOME</NavLink>
-      <NavLink to="/about">ABOUT</NavLink>
-      <NavLink target="_blank" to="https://github.com/Smyyecskn">
+    <div className="nav m-5 ">
+      <NavLink className="navlink" to="/">
+        HOME
+      </NavLink>
+      <NavLink className="navlink" to="/about">
+        ABOUT
+      </NavLink>
+      <NavLink
+        className="navlink"
+        target="_blank"
+        to="https://github.com/Smyyecskn"
+      >
         GİTHUB
       </NavLink>
-      <NavLink to="/login">LOGİN</NavLink>
+      {user.username && user.password ? (
+        <NavLink
+          className="navlink"
+          to="/login"
+          onClick={() => setUser({ username: "", password: "" })}
+        >
+          LOGOUT
+        </NavLink>
+      ) : (
+        <NavLink className="navlink" to="/login">
+          LOGIN
+        </NavLink>
+      )}
     </div>
   );
 };

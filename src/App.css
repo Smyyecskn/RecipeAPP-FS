@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url("https://picsum.photos/1600/900");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Josefin Sans", sans-serif !important;
 }
 
 .head {
@@ -10,19 +21,67 @@ body {
   padding: 20px;
   border-radius: 50%;
   max-width: 350px;
-  width: 300px;
+  width: 320px;
   gap: 10px;
-  height: 300px;
-  max-height: 300px;
-  margin: 10rem auto;
+  height: 320px;
+  max-height: 330px;
+  margin: 8rem auto;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: turquoise !important;
-  opacity: 0.8;
+  background-color: rgb(103, 55, 244) !important;
+  opacity: 0.6;
 }
 .nav {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   font-style: italic;
   font-weight: bolder;
+  font-size: 18px;
+}
+.navlink {
+  text-decoration: none;
+  font-size: larger;
+  color: rgb(235, 36, 165);
+  cursor: pointer;
+  text-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.75);
+}
+.navlink:hover {
+  color: rgb(255, 255, 255);
+}
+
+.cards {
+  width: 20rem;
+  position: relative;
+  z-index: 5;
+  display: fle;
+  margin: auto;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+.imga {
+  height: 220px !important;
+  position: absolute;
+  z-index: 3;
+
+  margin: 20px auto;
+  width: 250px !important;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+.img-container {
+  display: flex;
+  justify-content: center; /* Yatayda ortalama */
+  align-items: center; /* Dikeyde ortalama */
+  height: 50%; /* Kapsayıcı divin yüksekliği */
+  width: 100%; /* Kapsayıcı divin genişliği */
+}
+
+.img {
+  max-height: 100%; /* Resmin maksimum yüksekliğini belirler */
+  width: 300px; /* Genişliğini otomatik ayarlar */
+}
+
+.imge {
+  max-height: 40%; /* Resmin maksimum yüksekliğini belirler */
+  width: 100px; /* Genişliğini otomatik ayarlar */
 }
